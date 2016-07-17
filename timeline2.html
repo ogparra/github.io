@@ -1,0 +1,123 @@
+<!doctype html> 
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+    	<link rel="icon" href="../../favicon.ico">
+		<title>Timeline</title>
+
+		<!-- Bootstrap core CSS -->
+    	<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    	<link href="../../dist/css/bootstrap-social.css" rel="stylesheet">
+
+    	<!--Main CSS File --> 
+    	 <link href="cover.css" rel="stylesheet">
+
+    	<!-- JavaScript for timelime --> 
+	    <!--script type="text/javascript" src="timeline.js" ></script-->
+	    <script src="js/d3.v2.min.js" type="application/javascript"></script>
+	    <script src="js/timeknots.js" type="application/javascript"></script>
+
+	    <!-- Font Awesome for social icons --> 
+    	<script src="https://use.fontawesome.com/47762b7ea7.js"></script>
+	</head> 
+	<body>
+		<div class = "relative">
+	      <nav>
+	        <ul> 
+	          <!-- nav links -->
+	          <li ><a href="index.html">About me</a></li>
+	          <li ><a href="timeline.html">Timeline</a></li>
+	          <li ><a href="oparra_resume.pdf">Resume</a></li>
+	          <!-- Social Buttons -->
+	          <li class= "btn-time"><a href="https://github.com/ogparra" class = "btn btn-github">
+	          <i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+	          <li class ="btn-time"><a href="https://www.linkedin.com/in/oscar-parra-029b7795" class ="btn btn-linkedin">
+	          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+	          <li class = "btn-time"><a href="https://www.facebook.com/oscar.parra.1654" class = "btn btn-facebook">
+	          <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+	          <li class="btn-time"><a href="https://www.instagram.com/oscarparra06" class ="btn btn-instagram">            
+	          <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+	          <li>
+	          	<div class="dropdown">
+				    <button onclick="myFunction()" class="dropbtn2">Dropdown</button>
+				    <div id="myDropdown" class="dropdown-content">
+				      <a href="timeline.html">Highschool</a>
+				      <a href="timeline2.html">First year in college</a>
+				      <a href="timeline3.html">Second year in college</a>
+				    </div>
+				</div>
+	        </ul>
+	      </nav>
+	    </div>
+	    <div class="timeline">
+	    </div>
+	    <script type="text/javascript">
+	    var agenda = new Array();
+	    var img_des = new Array(7);
+	    var date_list = ["2014-5-24", " 2014-6-6", "2014-7-22", "2014-9-15", "2015-1-23", "2015-3-25","2016-6-12"];
+		    img_des[0] = "This was a picture I took after I accepted the American Mexican Educators Scholarship Award. On my left is Gabby who worked for Communities in Schools and on my right is Cristobal Vicente who was my AP spanish teacher. Two individuals who really made an impact on my life."
+		    img_des[1] = " This is picture shortly after graduation from highschool and recieving my diploma. On my right was my best friend from highschool Manny."
+		    img_des[2] = " This is a picture of my first internship at TextPlus. The guy on my left is called Max and he worked as a product manager. He was my mentor throughout my internship"
+		    img_des[3] =  "Here I am taking a photo infront of the UC Santa Cruz sign before I headed up to my dorm. Man was excited for college! "
+		    img_des[4] = "This is a picture of my beautiful girlfriend Rishika after she got a haircut (we didnt take many photos so this one is from June but it works)"
+		    img_des[5] = "This was the first slug I saw in the Santa Cruz Redwood Forest. I may have had lip contact with this yellow banana slug!  "
+		    img_des[6] = "My parents picking me up after my second year of college. Love them so much."
+	    var myImages = ["images/timeline2/Siblings.jpg", "images/timeline2/UC_Santa_Cruz.jpg", "images/timeline2/Engineering.jpg","images/timeline2/Cal_hacks.jpg", "images/timeline2/chess.jpg","images/timeline2/bGame.jpg", "images/timeline2/SOC.jpg"];
+	    for(var i=-3; i<4; i++){
+	    var thisdate = date_list[i+3];
+	    var thiscolor = "#2E8B57"
+	    var thisname = stringDivider(img_des[i+3], 40, "<br/>\n"); 
+	    serieId = parseInt(Math.random()*100) %3;
+	    thisimages = myImages[i+3];
+	    var thiswidth = (i<0)?1:5;
+	    agenda.push({ date: thisdate, name: thisname, img: thisimages, color: thiscolor})
+	    }
+	    TimeKnots.draw(".timeline", agenda, {dateFormat: "%B %Y", radius: 20, showLabels: false});
+	    /* Break Line Function 
+         first param takes in String
+         second the number of chars before newline 
+         third <br/>\n 
+   		*/ 
+	     function stringDivider(str, width, spaceReplacer) {
+	      if (str.length>width) {
+	          var p=width
+	          for (;p>0 && str[p]!=' ';p--) {
+	          }
+	          if (p>0) {
+	              var left = str.substring(0, p);
+	              var right = str.substring(p+1);
+	              return left + spaceReplacer + stringDivider(right, width, spaceReplacer);
+	          }
+	      }
+	      return str;
+	    }
+
+			    /* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn2')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    for (var i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+
+
+	  </script>
+	  <h2 class = "node">Hover over the nodes</h2>
+	</body>
+</html>
