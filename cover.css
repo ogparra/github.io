@@ -43,15 +43,14 @@
       div.about{
         text-align: center;
         position: relative;
-        top: 20px;
         left: -300px;
       } 
 
       .img{
         margin-left:345px;
-        width:500px;
-        height:400px;
-       /* -webkit-transform: rotate(450deg); */
+        width:425px;
+        height:425px;
+        -webkit-transform: rotate(90deg); 
       }
 
       .text{

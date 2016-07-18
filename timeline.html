@@ -58,26 +58,29 @@
 	    </div>
 	    <script type="text/javascript">
 	    var agenda = new Array();
-	    var img_des = new Array(7);
-	    var date_list = ["2014-5-24", " 2014-6-6", "2014-7-22", "2014-9-15", "2015-1-23", "2015-3-25","2016-6-12"];
-		    img_des[0] = "This was a picture I took after I accepted the American Mexican Educators Scholarship Award. On my left is Gabby who worked for Communities in Schools and on my right is Cristobal Vicente who was my AP spanish teacher. Two individuals who really made an impact on my life."
-		    img_des[1] = " This is picture shortly after graduation from highschool and recieving my diploma. On my right was my best friend from highschool Manny."
-		    img_des[2] = "This is a picture of my first internship at TextPlus. The guy on my left is called Max and he worked as a product manager. He was my mentor throughout my internship"
-		    img_des[3] =  "Here I am taking a photo infront of the UC Santa Cruz sign before I headed up to my dorm. Man was excited for college! "
-		    img_des[4] = "This is a picture of my beautiful girlfriend Rishika after she got a haircut (we didnt take many photos so this one is from June but it works)"
-		    img_des[5] = "This was the first slug I saw in the Santa Cruz Redwood Forest. I may have had lip contact with this yellow banana slug!  "
-		    img_des[6] = "My parents picking me up after my second year of college. Love them so much."
+	    var img_des = new Array(7); 
+	    var date_list = ["2013-12-24", "2014-4-10", "2014-5-10", "2014-5-23", "2014-6-6", "2014-7-22","2016-8-25"];
+	     img_des = ["This was Christmas back in 2013. I really like this picture because my family doesn't take many pictures together 					and this is one of the few ones I have from them.",
+		     		"Here I am accepting the American Mexican Educators Scholarship Award. On my left is Gabriela Morales who 		 		worked for Communities in Schools and on my right is Cristobal Vicente who was my AP spanish teacher in my senior year of high school. Two individuals who really made an impact on my life.",
+		     		"This is one of my favorite photos from prom. On the far left is Manny and in the middle is Sarah who I both used to run with on the school XC and track team.",
+		     		"During high school I was involved in Communities in Schools and I recieved a joint award from Communities in Schools and Creative Artist Agency for my involvement in an afterschool coding program. On my left is Victor 				Banuelos a web developer for CAA and on my right is the Chief Information Officer Michael Keithly.",
+		    		"I took this picture shortly after graduating from Venice Senior high school and recieving my diploma. On my right was my best friend from  high school Manny.",
+		    		"I interned at TextPlus, a mobile app development company. On my left is Max who worked as a product manager.",
+		    		"The month before starting my freshman year of college I attended a program called Justice which provided me an opportunity to become more knowledge about my history and considerate of others. This program changed who I was as a person"
+		    	   ];
 	    var myImages = ["https://ogparra.github.io/images/timeline/Christmas.JPG", 
-	    				"https://ogparra.github.io/images/timeline/Orale_UCSC.JPG", 
 	    				"https://ogparra.github.io/images/timeline/AME-Scholarship.JPG",
 	    				"https://ogparra.github.io/images/timeline/Prom_Pic.JPG",
 	    				"https://ogparra.github.io/images/timeline/CAA_Award.JPG",
 	    				"https://ogparra.github.io/images/timeline/Graduation.JPG", 
-	    				"https://ogparra.github.io/images/timeline/Textplus.JPG"];
+	    				"https://ogparra.github.io/images/timeline/Textplus.JPG",
+	    				"https://ogparra.github.io/images/timeline/justice.JPG", 
+	    			   ];
+
 	    for(var i=-3; i<4; i++){
 	    var thisdate = date_list[i+3];
 	    var thiscolor = "#e65c00"
-	    var thisname = stringDivider(img_des[i+3], 40, "<br/>\n"); 
+	    var thisname = stringDivider(img_des[i+3], 50, "<br/>\n"); 
 	    serieId = parseInt(Math.random()*100) %3;
 	    thisimages = myImages[i+3];
 	    var thiswidth = (i<0)?1:5;

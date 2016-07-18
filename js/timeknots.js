@@ -176,7 +176,7 @@ var TimeKnots = {
       .duration(100).attr("r",  function(d){if(d.radius != undefined){return Math.floor(d.radius*1.5)} return Math.floor(cfg.radius*1.5)});
       tip.html("");
       if(d.img != undefined){
-        tip.append("img").style("float", "left").style("margin-right", "4px").attr("src", d.img).attr("width", "300px").attr("height", "250px");
+        tip.append("img").style("float", "left").style("margin-right", "4px").attr("src", d.img).attr("width", "400px").attr("height", "350px");
       }
       tip.append("div").style("float", "bottom").html(dateValue );
       tip.transition()
