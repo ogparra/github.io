@@ -1,8 +1,8 @@
  /* Navigation at top of file */    
-      div.relative{
+      div.nav-bar{
         margin-left:250px;
         position: relative;
-       top: 20px; 
+        top: 25px; 
       }
       nav ul li{
         list-style-type: none; 
