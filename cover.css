@@ -1,5 +1,5 @@
  /* Navigation at top of file */    
-      div.nav-bar{
+      div.relative{
         margin-left:250px;
         position: relative;
         top: 25px; 
