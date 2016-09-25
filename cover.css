@@ -4,20 +4,22 @@
         position: relative;
         top: 25px; 
       }
+
       nav ul li{
         list-style-type: none; 
         display: inline;
         padding-left: 20px;
         padding-right: 20px;
       }
+    
+     /* Navigation links design */ 
 
-      /* Navigation links design */
-      nav ul li a{
+      nav a{
         color: black;
         text-decoration: none;
       }
       /* Navigation links hover effect */
-
+  /*
       nav ul li a:hover{
         text-decoration: none;
       }
@@ -39,24 +41,13 @@
        nav ul li.btn-time a:hover{
         color:#0080ff;
       }
-
-      div.about{
-        text-align: center;
-        position: relative;
-        left: -300px;
-      } 
-
-      .img{
-        margin-left:345px;
-        width:425px;
-        height:425px;
+        */
+      .img-responsive{
+        width:400px; 
+        height:400px;
+        display: block;
+        margin: 0 auto;
         -webkit-transform: rotate(90deg); 
-      }
-
-      .text{
-        margin-left: 605px;
-        width: 600px;
-        text-align: left;
       }
 
       .node{
@@ -145,3 +136,55 @@
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
+.row{ 
+  margin-top:50px;
+}
+
+.two{ 
+  margin-top:100px;
+} 
+
+.nav-margins{
+  /*text-align:center; */ 
+  margin: 50px 50px 50px 50px;
+}
+.nav-items{ 
+  padding-left:30px;
+  padding-right:30px;
+}
+.nav-btns{
+  padding-left: 20px; 
+  padding-right: 20px;
+}
+
+.row .about{
+  text-align: center;
+}
+
+.center-block{
+  display: block;
+  margin: 0 auto;
+}
+
+.text-adjust{
+  display: block;
+  margin: 0 auto;
+}
+.p-link{
+  color: black;
+  text-decoration: underline;
+}
+nav .p-link a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.img-block{ 
+  position:static;
+}
+
+.navbar{
+  position:absolute;
+}
