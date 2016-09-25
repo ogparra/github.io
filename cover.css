@@ -43,11 +43,11 @@
       }
         */
       .img-responsive{
-        width:400px; 
-        height:400px;
+        width: 400px; 
+        height: 400px;
         display: block;
         margin: 0 auto;
-        -webkit-transform: rotate(90deg); 
+        /* -webkit-transform: rotate(90deg); */
       }
 
       .node{
