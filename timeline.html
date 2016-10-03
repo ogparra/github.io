@@ -12,7 +12,6 @@
 
 		<!-- Bootstrap core CSS -->
     	<link href="css/bootstrap.min.css" rel="stylesheet">
-    	<!--link href="css/bootstrap-social.css" rel="stylesheet"-->
 
     	<!--Main CSS File --> 
     	 <link href="cover.css" rel="stylesheet">
@@ -40,6 +39,14 @@
                <a href="https://www.linkedin.com/in/oscar-parra-029b7795" class="btn btn-linkedin nav-btns nav-items">
                   <i class="fa fa-linkedin fa-2x" aria-hidden="false"></i>
                </a>
+               <div class="dropdown">
+				    <button onclick="myFunction()" class="dropbtn dropdown">Dropdown</button>
+				    <div id="myDropdown" class="dropdown-content show">
+				      <a href="timeline.html" >Highschool</a>
+				      <a href="timeline2.html" >First year in college</a>
+				      <a href="timeline3.html" >Second year in college</a>
+				    </div>
+				</div>
             </div>
            </div>
         </nav>
@@ -77,12 +84,24 @@
 	      </nav>
 	    </div>
 	-->
-		<div>
-	    <p class="time-desc">Can best be viewed on <br>a desktop monitor, <br>I am working on mobile for the timeline</p>
-	</div>
-	    <div class="timeline">
+		
+	    <p class="text-adjust time-desc">Can best be viewed on <br>a desktop monitor, <br>I am working on mobile for the timeline</p>
+	    </div> <!-- Close div for container fluid --> 
+	   	<div class="timeline">
+
 	    </div>
 	    <script type="text/javascript">
+	    var horizontal = true;
+	    var svgHeight = 500;
+	    var svgWidth =  100;
+	    var mq = window.matchMedia( "(min-width: 500px)" );
+	    if( mq.matches){
+	    	horizontal = true;
+	    	svgWidth = 900;
+	    }else{
+	    	horizontal = false;
+	    }
+
 	    var agenda = new Array();
 	    var img_des = new Array(7); 
 	    var date_list = ["2013-12-24", "2014-4-10", "2014-5-10", "2014-5-23", "2014-6-6", "2014-7-22","2016-8-25"];
@@ -112,7 +131,7 @@
 	    var thiswidth = (i<0)?1:5;
 	    agenda.push({ date: thisdate, name: thisname, img: thisimages, color: thiscolor})
 	    }
-	    TimeKnots.draw(".timeline", agenda, {dateFormat: "%B %Y", radius: 20, showLabels: false});
+	    TimeKnots.draw(".timeline", agenda, {horizontalLayout: horizontal, dateFormat: "%B %Y", radius: 20, showLabels: false, width:svgWidth, height:svgHeight});
 	    /* Break Line Function 
          first param takes in String
          second the number of chars before newline 
@@ -128,7 +147,7 @@
 	              var right = str.substring(p+1);
 	              return left + spaceReplacer + stringDivider(right, width, spaceReplacer);
 	          }
-	      }
+	      }	
 	      return str;
 	    }
 
@@ -153,7 +172,7 @@
 
 
 	  </script>
-	   <p style="color: red;">If hover stops working click anywhere in the window and it should work, otherwise reload the webapge.</p>		
+	   <!--p style="color: red;">If hover stops working click anywhere in the window and it should work, otherwise reload the webapge.</p-->		
 	  <h2 class = "node">Hover over the nodes</h2>
 
 	</body>
