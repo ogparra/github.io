@@ -68,8 +68,8 @@ p.time-desc{
   position: relative;
   display: inline-block;
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding: 12px;
+  font-size: 14px;
   border: none;
   cursor: pointer;
 }
@@ -86,7 +86,7 @@ p.time-desc{
 /* Links inside the dropdown */
 .dropdown-content a{
   color: black;
-  padding: 12px 16px;
+  padding: 10px 16px 8px;
   text-decoration: none;
   display: block;
 }
