@@ -110,8 +110,8 @@ p.time-desc{
 }
 
 .nav-btns{
-  padding-left: 14px; 
-  padding-right: 14px;
+  padding-left: 10px; 
+  padding-right: 10px;
 }
 
 .navbar{
@@ -158,6 +158,6 @@ nav .p-link a:hover{
 }
 
 p.about{
-  width:320px;
+  width:300px;
   word-wrap: break-word;
 }
