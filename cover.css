@@ -63,7 +63,7 @@ div.carousel{
     margin-top: -100px;
   }
   .carousel-indicators {
-    bottom: 140px;
+    bottom: 95px;
 }
 }
 
@@ -80,7 +80,7 @@ div.carousel{
     transform: translateY(-50%);
   } 
   .carousel-indicators {
-    bottom: 140px;
+    bottom: 95px;
   }
 }
 
