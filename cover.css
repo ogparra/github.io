@@ -108,6 +108,9 @@ div.carousel{
   border-color:#E44424;
 }
 
+div.carousel-indicator{
+  margin-top: 100px;
+}
 /* New css */
 
 
