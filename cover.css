@@ -64,7 +64,7 @@ div.carousel{
   }
   .carousel-indicators {
     bottom: 95px;
-}
+  }
 }
 
 @media (min-width: 700px ) and (max-width: 1199px ) { 
