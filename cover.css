@@ -58,6 +58,10 @@ div.carousel{
     top: 50%;
     transform: translateY(-50%);
   }
+
+    .carousel-content-mt{
+    margin-top: -200px;
+  }
 }
 
 @media (min-width: 700px ) and (max-width: 1199px ) { 
