@@ -100,6 +100,11 @@ div.carousel{
    margin: 0 !important;
 }
 
+.carousel-indicators{
+  bottom: 140px;
+}
+
+
 .carousel-indicators .active{
   width: 20px;
   height:20px;
