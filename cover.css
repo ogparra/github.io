@@ -39,6 +39,7 @@ div.special-div {
   overflow:hidden;
   display:block;
   background-color: white;
+  font-family: 'Lato', serif;
 }
 
 div.carousel{
@@ -62,9 +63,6 @@ div.carousel{
   .carousel-content-mt{
     margin-top: -100px;
   }
-  .carousel-indicators > li {
-    bottom: 80px;
-  }
 }
 
 @media (min-width: 700px ) and (max-width: 1199px ) { 
@@ -79,9 +77,6 @@ div.carousel{
     top: 50%;
     transform: translateY(-50%);
   } 
-  .carousel-indicators > li{
-    bottom: 80px;
-  }
 }
 
 @media (min-width:1200px) { 
@@ -95,9 +90,6 @@ div.carousel{
     transform: translateY(-50%);
   }
 
-  .carousel-indicators > li {
-    bottom: 80px;
-  }
 }
 
 
@@ -115,14 +107,20 @@ div.carousel{
   height:20px;
   border-color: #882815;
 }
-.carousel-indicators > li{
+.carousel-indicators >li{
   width: 20px;
   height:20px; 
   border:2px solid;
   border-color:#E44424;
 }
 
+h1{
+  font-weight: 900;
+}
 
+h3{
+  font-weight: 700;
+}
 /* New css */
 
 
