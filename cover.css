@@ -63,6 +63,9 @@ div.carousel{
   .carousel-content-mt{
     margin-top: -100px;
   }
+  ol.carousel-indicators{
+    bottom: 50px;
+  }
 }
 
 @media (min-width: 700px ) and (max-width: 1199px ) { 
