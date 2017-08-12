@@ -30,10 +30,10 @@ function setCouplepic(){
 
 function getCatpic(){
     $.ajax({
-        url: "http://api.giphy.com/v1/gifs/search?q=cats&api_key=0f55bfb206064713a1fa43987a6a04f4&limit=250",
+        url: "http://api.giphy.com/v1/gifs/search?q=cats&api_key=0f55bfb206064713a1fa43987a6a04f4&limit=25",
     }).done(function(content) {
         console.log(content.data);
-        catURL = content.data[Math.floor(Math.random()*250)].images.fixed_width.url;
+        catURL = content.data[Math.floor(Math.random()*25)].images.fixed_width.url;
         let gif = document.getElementById("cat-gif");
         gif.src = catURL;
     });
