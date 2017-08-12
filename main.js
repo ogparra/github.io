@@ -3,12 +3,12 @@
 var app = new Vue({
   el: '#app',
   data: {
-  	main_content: true,
+  	main_content:true,
   	sub_content: false,
     about:false,
-    exp: false, 
-    skills: false, 
-    proj: false, 
+    portfolio: false, 
+    exper: false, 
+    other: false, 
     contact: false,
   },
     methods: {
@@ -21,31 +21,14 @@ var app = new Vue({
     if(value == 1){
 			this.about = !this.about;
 		}else if(value == 2 ){
-			this.exp = !this.exp;
+			this.portfolio = !this.portfolio;
 		}else if(value == 3){
-			this.skills = !this.skills;
+			this.exper = !this.exper;
 		}else if(value == 4){
-			this.proj = !this.proj;
+			this.other = !this.other;
 		}else
-			this.contact = !this.contact;
+			value = value; // This case should never be reached
     }
   }
 })
 
-$("#first").hover(function () {
-  $("#desc").slideToggle("fast");
-});
-
-$("#second").hover(function () {
-  $("#desc2").slideToggle("fast");
-});
-
-$("#third").hover(function () {
-  $("#desc3").slideToggle("fast");
-});
-$("#fourth").hover(function () {
-  $("#desc4").slideToggle("fast");
-});
-$("#fifth").hover(function () {
-  $("#desc5").slideToggle("fast");
-});
