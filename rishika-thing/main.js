@@ -18,6 +18,9 @@ function setRandomColor(){
   
 window.onload = function () {
     setRandomColor();
+    particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('particles.js config loaded');
+      });
 }
 
 function setCouplepic(){
@@ -40,7 +43,7 @@ function getCatpic(){
 let app = new Vue({
     el: "#app", 
     data: {
-        message: '',
+        message:  "Rishika's birthday June 7th 2017",
         showCouple: true,
         showCats: false
     }, 

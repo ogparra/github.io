@@ -1,4 +1,8 @@
 
+body{
+  overflow:hidden; 
+}
+
 h1{
     text-align: center;
 }
@@ -19,9 +23,9 @@ button{
     background-color: #C81C2D;
     border-radius: 5px;
     padding: 5px;
-    width: 50%;
-    margin-left: 25%;
 }
+
+
 
 button:hover{
     transition: background-color 0.8s ease;
@@ -37,8 +41,6 @@ button:hover{
   background-color: #0d923f;
   border-radius: 5px;
   padding: 5px;
-  width: 50%;
-  margin-left: 25%;
 }
 
 .cats-btn:hover{
@@ -48,15 +50,14 @@ button:hover{
 
 }
 
-
-
-#outer{
-        width: 50%;
-        margin: 0 auto;
+#app{
+  position: absolute;
+  width: 100%;
 }
+
 #inner{
-    margin-left: 15%; 
-    margin-right: 15%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* Bob */
@@ -124,4 +125,3 @@ button:hover{
     -webkit-animation-direction: normal, alternate;
     animation-direction: normal, alternate;
   }
-  
