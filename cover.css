@@ -44,7 +44,17 @@ body{
     }
 
   }
+a:link{
+  color: black;
+}
 
+a:visited{
+  color: black;
+}
+
+a:hover{
+  color: #96b543;
+}
 
 @media (min-width: 1200px){
   .nopadding {
