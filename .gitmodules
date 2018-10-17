@@ -1,0 +1,4 @@
+[submodule "oscar's website/public"]
+	path = oscar's website/public
+	url = git@github.com:ogparra/ogparra.github.io.git
+	branch = master
