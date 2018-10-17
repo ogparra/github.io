@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Oscar&#39;s Website</title>
-    <link>http://oparra.me/</link>
+    <link>https://ogparra.github.io/</link>
     <description>Recent content in About on Oscar&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; Oscar Parra 2018</copyright>
     <lastBuildDate>Tue, 24 Jul 2018 17:44:36 -0700</lastBuildDate>
     
-	<atom:link href="http://oparra.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ogparra.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Why I chose Hugo to redesign my website with</title>
-      <link>http://oparra.me/blog/first/</link>
+      <link>https://ogparra.github.io/blog/first/</link>
       <pubDate>Tue, 24 Jul 2018 17:44:36 -0700</pubDate>
       
-      <guid>http://oparra.me/blog/first/</guid>
+      <guid>https://ogparra.github.io/blog/first/</guid>
       <description>Building with Hugo Hugo is a popular open-source static site generator that I used to build this website with!
 Prior to using Hugo, I designed my own website using custom HTML, CSS, and jQuery in my freshman year of college, At the time, I found that making my own website was fun and surely I learned various thing about web when building my personal website, however, jump forward 4 years later and I was looking redesign with a few things in mind:   Performance   Simple to edit   Flexibility</description>
     </item>

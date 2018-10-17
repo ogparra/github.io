@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Oscar&#39;s Website</title>
-    <link>http://oparra.me/about/</link>
+    <link>https://ogparra.github.io/about/</link>
     <description>Recent content in About on Oscar&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; Oscar Parra 2018</copyright>
     
-	<atom:link href="http://oparra.me/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ogparra.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
