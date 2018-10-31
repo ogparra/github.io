@@ -1,8 +1,8 @@
 ---
-title: "Why I chose Hugo to redesign my website with"
+title: "Choosing to redesign my website with Hugo"
 hero_image: "purpose.jpg"
-date: 2018-07-24T17:44:36-07:00
-description: "Redesigning my personal website with Hugo!"
+date: 2018-10-16T17:44:36-07:00
+description: "Performance, Flexibility, Simplicity "
 ---
 
 <h2>Building with Hugo</h2>

@@ -6,15 +6,24 @@
     <description>Recent content in About on Oscar&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; Oscar Parra 2018</copyright>
-    <lastBuildDate>Tue, 24 Jul 2018 17:44:36 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 30 Oct 2018 17:44:36 -0700</lastBuildDate>
     
 	<atom:link href="https://ogparra.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Why I chose Hugo to redesign my website with</title>
+      <title>Writing code everyday</title>
+      <link>https://ogparra.github.io/blog/second/</link>
+      <pubDate>Tue, 30 Oct 2018 17:44:36 -0700</pubDate>
+      
+      <guid>https://ogparra.github.io/blog/second/</guid>
+      <description>Creating the habit of writing code everyday  One thing that I found difficult as a student was knowing what to write and being passionate about it. Often times, I would write sufficient code to pass a class assignment and not know what to work on next. Also, I found that coming home in the evenings, I sometimes lacked the motivation to continue writing code unless the solution was clear.</description>
+    </item>
+    
+    <item>
+      <title>Choosing to redesign my website with Hugo</title>
       <link>https://ogparra.github.io/blog/first/</link>
-      <pubDate>Tue, 24 Jul 2018 17:44:36 -0700</pubDate>
+      <pubDate>Tue, 16 Oct 2018 17:44:36 -0700</pubDate>
       
       <guid>https://ogparra.github.io/blog/first/</guid>
       <description>Building with Hugo Hugo is a popular open-source static site generator that I used to build this website with!
