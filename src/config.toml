@@ -70,19 +70,19 @@ enableGitInfo = false
     icon = "linkedin "
     icon_pack = "fa"
     link = "//www.linkedin.com/in/ogparra/"
-    text = "LinkedIn"
+    text = " LinkedIn"
     
   [[params.social]]
     icon = "github "
     icon_pack = "fa"
     link = "//github.com/ogparra"
-    text = "Github"
+    text = " Github"
 
   [[params.social]]
     icon = "quora "
     icon_pack = "fa"
     link = "//www.quora.com/profile/Oscar-Parra-17"
-    text = "Quora"
+    text = " Quora"
 
 # Taxonomies.
 # [taxonomies]
